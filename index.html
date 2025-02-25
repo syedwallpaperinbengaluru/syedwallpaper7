@@ -4,31 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syed Wallpaper & Bags</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-            scroll-behavior: smooth;
-        }
-        body {
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
             text-align: center;
-            background-color: #f8f9fa;
-            padding-bottom: 100px; /* Prevent footer overlap */
+            background-color: #f4f4f4;
         }
-        
-        /* Header */
         header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            font-size: 26px;
+            background: #333; 
+            color: white; 
+            padding: 15px; 
+            font-size: 24px;
             font-weight: bold;
         }
-
-        /* Navigation */
         nav {
             background: #444;
             padding: 10px;
@@ -36,140 +27,84 @@
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;
+            padding: 10px 15px;
             display: inline-block;
             transition: 0.3s;
         }
         nav a:hover {
-            background: #ffcc00;
-            color: #333;
+            background: #ff9900;
             border-radius: 5px;
         }
-
-        /* Hero Section */
-        .hero {
-            background: url('wallpaper.png') no-repeat center center/cover;
-            color: white;
-            padding: 60px 20px;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero h1 {
-            font-size: 36px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 18px;
-            margin-top: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        /* Sections */
         section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: auto;
+            padding: 30px;
         }
-        section h2 {
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #333;
-        }
-        section p {
-            font-size: 18px;
-            color: #555;
-        }
-        
-        /* Images */
         img {
-            max-width: 100%;
-            height: auto;
+            width: 80%;
             border-radius: 10px;
-            margin-top: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
             color: white;
-            background: #ffcc00;
-            text-decoration: none;
-            margin-top: 15px;
-            border-radius: 5px;
-            transition: 0.3s;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
         }
-        .btn:hover {
-            background: #e6b800;
+        .whatsapp-button:hover {
+            background: #1ebe57;
         }
-
-        /* Footer */
         footer {
             background: #333;
             color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 16px;
-            position: relative;
-            margin-top: 20px;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
     <header>Syed Wallpaper & Bags</header>
-
-    <!-- Navigation -->
     <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Welcome to Syed Wallpaper & Bags</h1>
+    
+    <section>
+        <h2>Welcome to Syed Wallpaper & Bags</h2>
         <p>Your one-stop shop for premium wallpapers and expert fixing services.</p>
-        <a href="#services" class="btn">View Services</a>
+        <img src="wallpaper.png" alt="Beautiful Wallpaper">
     </section>
 
-    <!-- Our Business Card -->
     <section>
         <h2>Our Business Card</h2>
         <img src="business_card.jpg" alt="Business Card">
     </section>
 
-    <!-- Services -->
-    <section id="services">
+    <section>
         <h2>Our Services</h2>
         <p>✔ 3D Customized Wallpaper</p>
         <p>✔ Korean Imported Wallpaper Rolls</p>
         <p>✔ Free Installation & Alteration</p>
         <p>✔ Special CMC Gum Fixing</p>
-        <a href="#contact" class="btn">Contact Us</a>
     </section>
-
-    <!-- Contact -->
-    <section id="contact">
+    
+    <section>
         <h2>Contact Us</h2>
         <p><strong>Address:</strong> #4, Horamavu Agara Main Road, Opp. White House, Babusapalya, Kalyan Nagar Post, Bengaluru - 560043.</p>
         <p><strong>Phone:</strong> +91 9538132062, +91 9972419680</p>
         <p><strong>Email:</strong> syedwallpaper@gmail.com</p>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        Contact us at Bengaluru, 560043 | Phone: +91 9538132062, +91 9972419680
-    </footer>
-
+    
+    <a href="https://wa.me/message/2K2WJQT64ZI2K1" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <footer>Contact us at Bengaluru, 560043 | Phone: +91 9538132062, +91 9972419680</footer>
 </body>
 </html>
