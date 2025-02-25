@@ -5,61 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syed Wallpaper & Bags</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            margin: 0; 
-            padding: 0; 
-            padding-bottom: 60px; /* Prevent footer overlap */
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
         }
-        header { background: #333; color: white; padding: 10px; font-size: 24px; }
-        nav { margin: 10px; }
-        nav a { margin: 10px; text-decoration: none; color: #333; font-weight: bold; }
-        section { padding: 20px; }
-        footer { 
-            background: #333; 
-            color: white; 
-            padding: 10px; 
-            position: fixed; 
-            width: 100%; 
-            bottom: 0; 
+        body {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding-bottom: 100px; /* Prevent footer overlap */
+        }
+        
+        /* Header */
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: #ffcc00;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('wallpaper.png') no-repeat center center/cover;
+            color: white;
+            padding: 60px 20px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        section p {
+            font-size: 18px;
+            color: #555;
+        }
+        
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ffcc00;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e6b800;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            position: relative;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>Syed Wallpaper & Bags</header>
+
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="services.html">Services</a> |
-        <a href="contact.html">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
-    
-    <section>
-        <h2>Welcome to Syed Wallpaper & Bags</h2>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Welcome to Syed Wallpaper & Bags</h1>
         <p>Your one-stop shop for premium wallpapers and expert fixing services.</p>
-        <img src="wallpaper.png" alt="Beautiful Wallpaper" width="80%">
+        <a href="#services" class="btn">View Services</a>
     </section>
 
+    <!-- Our Business Card -->
     <section>
         <h2>Our Business Card</h2>
-        <img src="business_card.jpg" alt="Business Card" width="80%">
+        <img src="business_card.jpg" alt="Business Card">
     </section>
 
-    <section>
+    <!-- Services -->
+    <section id="services">
         <h2>Our Services</h2>
         <p>✔ 3D Customized Wallpaper</p>
         <p>✔ Korean Imported Wallpaper Rolls</p>
         <p>✔ Free Installation & Alteration</p>
         <p>✔ Special CMC Gum Fixing</p>
+        <a href="#contact" class="btn">Contact Us</a>
     </section>
-    
-    <section>
+
+    <!-- Contact -->
+    <section id="contact">
         <h2>Contact Us</h2>
         <p><strong>Address:</strong> #4, Horamavu Agara Main Road, Opp. White House, Babusapalya, Kalyan Nagar Post, Bengaluru - 560043.</p>
         <p><strong>Phone:</strong> +91 9538132062, +91 9972419680</p>
         <p><strong>Email:</strong> syedwallpaper@gmail.com</p>
     </section>
-    
-    <footer>Contact us at Bengaluru, 560043 | Phone: +91 9538132062, +91 9972419680</footer>
+
+    <!-- Footer -->
+    <footer>
+        Contact us at Bengaluru, 560043 | Phone: +91 9538132062, +91 9972419680
+    </footer>
+
 </body>
 </html>
